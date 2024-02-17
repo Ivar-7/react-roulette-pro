@@ -6,12 +6,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ivar-7/react-roulette-pro"
+    "url": "https://github.com/IvanAdmaers/react-roulette-pro"
   },
   "bugs": {
-    "url": "https://github.com/Ivar-7/react-roulette-pro/issues"
+    "url": "https://github.com/IvanAdmaers/react-roulette-pro/issues"
   },
-  "homepage": "https://roulettepro.netlify.app",
+  "homepage": "https://react-roulette-pro.ivanadmaers.com",
   "private": false,
   "keywords": [
     "react",
@@ -21,8 +21,7 @@
     "fortune",
     "prize",
     "react-roulette",
-    "react-roulette-pro",
-    "ivar"
+    "react-roulette-pro"
   ],
   "main": "dist/index.js",
   "source": "src/index.ts",
@@ -80,8 +79,5 @@
   },
   "files": [
     "dist"
-  ],
-  "dependencies": {
-    "react-roulette-pro": "^3.1.1"
-  }
+  ]
 }

@@ -12,6 +12,6 @@
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
     "react-roulette-pro": "file:..",
-    "sweetalert2": "^11.10.5"
+    "sweetalert2": "^11.4.0"
   }
 }
