@@ -6,12 +6,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/IvanAdmaers/react-roulette-pro"
+    "url": "https://github.com/Ivar-7/react-roulette-pro"
   },
   "bugs": {
-    "url": "https://github.com/IvanAdmaers/react-roulette-pro/issues"
+    "url": "https://github.com/Ivar-7/react-roulette-pro/issues"
   },
-  "homepage": "https://react-roulette-pro.ivanadmaers.com",
+  "homepage": "https://roulettepro.netlify.app",
   "private": false,
   "keywords": [
     "react",
@@ -21,7 +21,8 @@
     "fortune",
     "prize",
     "react-roulette",
-    "react-roulette-pro"
+    "react-roulette-pro",
+    "ivar"
   ],
   "main": "dist/index.js",
   "source": "src/index.ts",
@@ -32,7 +33,7 @@
   "scripts": {
     "dev": "webpack --watch",
     "build": "webpack",
-    "prepare": "npm run build",
+    "prepare": "npm install --force && npm run build",
     "test": "jest",
     "lint": "eslint ."
   },
