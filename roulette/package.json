@@ -5,7 +5,8 @@
   "private": false,
   "scripts": {
     "dev": "webpack serve",
-    "build": "NODE_ENV=production webpack"
+    "build": "NODE_ENV=production webpack",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "nanoid": "^3.2.0",
