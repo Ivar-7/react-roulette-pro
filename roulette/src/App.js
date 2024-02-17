@@ -190,7 +190,7 @@ const App = () => {
     spinningTime: {
       name: 'Spinning time',
       options: ['3', '5', '10', '15', '20'],
-      value: '3',
+      value: '10',
     },
   });
 
@@ -235,7 +235,8 @@ const App = () => {
 
       const { id } = prizeList[newPrizeIndex];
 
-      Toast.fire({ icon: 'info', title: `Must win id - ${id}` });
+      // Toast.fire({ icon: 'info', title: `Must win id - ${id}` });
+      Toast.fire({ icon: 'info', title: 'Loading prize... ' });
     };
 
     prepare();
