@@ -1,0 +1,17 @@
+{
+  "name": "react-roulette-pro-example",
+  "homepage": ".",
+  "version": "1.0.0",
+  "private": false,
+  "scripts": {
+    "dev": "webpack serve",
+    "build": "NODE_ENV=production webpack"
+  },
+  "dependencies": {
+    "nanoid": "^3.2.0",
+    "react": "file:../node_modules/react",
+    "react-dom": "file:../node_modules/react-dom",
+    "react-roulette-pro": "file:..",
+    "sweetalert2": "^11.10.5"
+  }
+}
