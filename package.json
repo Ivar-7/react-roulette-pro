@@ -33,7 +33,7 @@
   "scripts": {
     "dev": "webpack --watch",
     "build": "webpack",
-    "prepare": "npm install --force && npm run build",
+    "prepare": "npm run build",
     "test": "jest",
     "lint": "eslint ."
   },
