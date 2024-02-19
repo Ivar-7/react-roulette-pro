@@ -2,4 +2,4 @@ This example was bootstrapped with [Create React App](https://github.com/faceboo
 
 It is linked to the react-roulette-pro package in the parent directory for development purposes.
 
-You can run `npm install` and then `npm start` to test your package.
+You can run `npm install` and then `npm run dev` to test your package.

@@ -6,12 +6,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/IvanAdmaers/react-roulette-pro"
+    "url": "https://github.com/Ivar-7/react-roulette-pro"
   },
   "bugs": {
-    "url": "https://github.com/IvanAdmaers/react-roulette-pro/issues"
+    "url": "https://github.com/Ivar-7/react-roulette-pro/issues"
   },
-  "homepage": "https://react-roulette-pro.ivanadmaers.com",
+  "homepage": "https://roulette-pro.netlify.app/",
   "private": false,
   "workspaces": [
     "roulette"

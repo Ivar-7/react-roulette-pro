@@ -12,7 +12,7 @@
   </a>
 </div>
 
-**The best** React roulette. Focus on optimization, customization and ease of use. Live example - [react-roulette-pro.ivanadmaers.com](https://react-roulette-pro.ivanadmaers.com)
+**The best** React roulette. Focus on optimization, customization and ease of use. Live example - [roulette-pro.netlify.app](https://roulette-pro.netlify.app/)
 
 > React Roulette Pro 3.0 realised! See [these release notes](./docs/releases/3.0.0.md) and [this migration guide](./docs/migrations/2.x_to_3.x.md)
 
@@ -40,7 +40,7 @@
 
 ```bash
 # Via npm:
-npm i --force react-roulette-pro
+npm install
 
 # Via yarn:
 yarn add react-roulette-pro
@@ -155,7 +155,7 @@ Where * means required
 ## FAQ
 
 🧐 **Where can I find an example of how to use the package?**  
-📣 You can find a live example on this site - [react-roulette-pro.ivanadmaers.com](https://react-roulette-pro.ivanadmaers.com) and in the [example](https://github.com/IvanAdmaers/react-roulette-pro/tree/main/example) folder.
+📣 You can find a live example on this site - [roulette-pro.netlify.app/](https://roulette-pro.netlify.app/) and in the [example](https://github.com/Ivar-7/react-roulette-pro/main/roulette) folder.
 
 🧐 **How can I customize the roulette?**  
 📣 First, you can pass a `prizeItemRenderFunction` to render prize items by yourself. Second, you can use a specific design plugin. Third, you can pass your specific classes via `classes` prop.
@@ -183,14 +183,16 @@ const RoulettePro = dynamic(() => import('react-roulette-pro'), {
 
 1. Clone the project
 
-2. cd example/  
+```bash
+npm install
+```
+
+2. cd roulette/  
 
 3. Run
 
 ```bash
-npm ci i
-
-npm start
+npm run dev
 ```
 
 The last command runs webpack dev server  
