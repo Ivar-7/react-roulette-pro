@@ -13,6 +13,9 @@
   },
   "homepage": "https://react-roulette-pro.ivanadmaers.com",
   "private": false,
+  "workspaces": [
+    "roulette"
+  ],
   "keywords": [
     "react",
     "roulette",
