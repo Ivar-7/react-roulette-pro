@@ -97,31 +97,6 @@ const getDesignOptions = (settings) => {
 // eslint-disable-next-line valid-typeof
 const isArrayOf = (type, array) => array.every((item) => typeof item === type);
 
-// const getOptionsAsString = (settings, design) => {
-//   let string = '';
-//   const keys = Object.keys(settings);
-
-//   keys.forEach((key) => {
-//     const { options, value, forDesign } = settings[key];
-
-//     if (!forDesign) {
-//       return;
-//     }
-
-//     if (typeof forDesign !== 'boolean' && forDesign !== design) {
-//       return;
-//     }
-
-//     if (options[0] === value) {
-//       return;
-//     }
-
-//     string += `${key}: ${value},\n`;
-//   });
-
-//   return string;
-// };
-
 const API = {
   getPrizeIndex: async () => {
     const randomPrizeIndex = getRandomIntInRange(0, prizes.length - 1);
@@ -159,24 +134,6 @@ const App = () => {
       value: false,
       forDesign: 'Regular',
     },
-    // hideTopArrow: {
-    //   name: 'Hide top arrow',
-    //   options: [false, true],
-    //   value: false,
-    //   forDesign: 'GracefulLines',
-    // },
-    // hideSideArrows: {
-    //   name: 'Hide side arrows',
-    //   options: [false, true],
-    //   value: false,
-    //   forDesign: 'GracefulLines',
-    // },
-    // replaceBottomArrowWithTopArrow: {
-    //   name: 'Replace bottom arrow with top arrow',
-    //   options: [false, true],
-    //   value: false,
-    //   forDesign: 'GracefulLines',
-    // },
     soundWhileSpinning: {
       name: 'Sound while spinning',
       options: [false, true],
@@ -233,7 +190,7 @@ const App = () => {
       setPrizeIndex(newPrizeIndex);
       setStart(false);
 
-      const { id } = prizeList[newPrizeIndex];
+      // const { id } = prizeList[newPrizeIndex];
 
       // Toast.fire({ icon: 'info', title: `Must win id - ${id}` });
       Toast.fire({ icon: 'info', title: 'Loading prize... ' });
@@ -331,48 +288,6 @@ const App = () => {
     </div>
   );
 
-  // const designOptionsString = getOptionsAsString(settings, design);
-  // const options = Object.entries({
-  //   stopInCenter,
-  //   withoutAnimation,
-  // });
-  // const availableOptions = options.filter((item) => Boolean(item[1]));
-
-  // const optionsString = availableOptions
-  //   .map(([key, value]) => `${key}: ${value}, `)
-  //   .join('');
-
-  // const codeElement = (
-  //   <pre className="pre-element">
-  //     <code className="pre-element-code">
-  //       {`
-  //       const prizeList = ${JSON.stringify(prizeList, null, 2)};
-
-  //       <RoulettePro
-  //         ${type !== settings.type.options[0] ? `type="${type}"` : ''}
-  //         start={${Boolean(start)}}
-  //         prizes={prizeList}
-  //         prizeIndex={${prizeIndex}}
-  //         spinningTime={${spinningTime}}
-  //         ${/* ${isDefaultDesign ? '' : `design="${design}"`} */ ''}
-  //         ${
-  //           designOptionsString
-  //             ? `designOptions={{${designOptionsString}}}`
-  //             : ''
-  //         }
-  //         ${soundWhileSpinning ? `soundWhileSpinning="${sound}"` : ''}
-  //         ${optionsString !== '' ? `options={{ ${optionsString} }}` : ''}
-  //         ${
-  //           prizesWithText === true
-  //             ? 'defaultDesignOptions={{ prizesWithText: true }}'
-  //             : ''
-  //         }
-  //       />
-  //     `}
-  //     </code>
-  //   </pre>
-  // );
-
   return (
     <div>
       <div className={`roulette ${type}`}>
@@ -409,7 +324,6 @@ const App = () => {
       </div>
 
       {settingsElement}
-      {/* {codeElement} */}
     </div>
   );
 };
